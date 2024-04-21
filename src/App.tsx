@@ -32,17 +32,10 @@ function App() {
 
   return (
     <section className="bg-black/50 w-full h-full p-8 lg:p-16">
-      <nav className="">
-        <img
-          src="/images/asb-logo-white.png"
-          alt="acea spades logo"
-          className="w-[75px] h-[75px] ml-auto opacity-50 hover:opacity-100 transition duration-300 ease-in-out"
-        />
-      </nav>
       <img
         src="/images/acea-profile.png"
         alt="acea spades"
-        className="w-[200px] h-[200px] rounded-full mx-auto"
+        className="w-[200px] h-[200px] rounded-full mx-auto mb-4"
       />
       <h1 className="lg:text-[5rem] mt-auto font-black">ACEA SPADES</h1>
       <div className="min-h-40 flex justify-center items-center">
@@ -115,6 +108,11 @@ function App() {
           labels=""
         />
       </section>
+      <img
+        src="/images/asb-logo-white.png"
+        alt="acea spades logo"
+        className="w-[75px] h-[75px] mx-auto mt-16 mb-4 opacity-50 hover:opacity-100 transition duration-300 ease-in-out"
+      />
     </section>
   );
 }
