@@ -1,35 +1,63 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+    <section className="bg-black/50 w-full h-full p-8 lg:p-16">
+      <nav className="">
+        <img
+          src="/images/asb-logo-white.png"
+          alt="acea spades logo"
+          className="w-[75px] h-[75px] ml-auto opacity-50 hover:opacity-100 transition duration-300 ease-in-out"
+        />
+      </nav>
+      <img
+        src="/images/acea-profile.png"
+        alt="acea spades"
+        className="w-[200px] h-[200px] rounded-full mx-auto"
+      />
+      <h1 className="lg:text-[5rem] mt-auto font-black">ACEA SPADES</h1>
+      <section className="flex flex-col gap-4">
+        <button
+          className="hover:scale-[101%] transition duration-300 ease-in-out"
+          onClick={() => {
+            window.open("https://sundragon.tech", "_blank");
+          }}
+        >
+          Hire me @ <b>sundragon.tech</b>
         </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+        <button
+          className="hover:scale-[101%] transition duration-300 ease-in-out"
+          onClick={() => {
+            window.open(
+              "https://njump.me/npub1xzrkzsrnr83vn7h0udq6tnapwpswy5equlrtkn3nu0e0anlmzynqne0qap",
+              "_blank"
+            );
+          }}
+        >
+          Visit my <b>Nostr</b> profile via Njump
+        </button>
+        <button
+          className="hover:scale-[101%] transition duration-300 ease-in-out"
+          onClick={() => {
+            window.open(
+              "https://publish.obsidian.md/gondolla/Welcome+to+Gond%C5%8Dlla",
+              "_blank"
+            );
+          }}
+        >
+          Read <b>Gondōlla</b>: A Galactic Spiritual Mythology
+        </button>
+        <button
+          className="hover:scale-[101%] transition duration-300 ease-in-out"
+          onClick={() => {
+            window.open("https://github.com/amunrarara", "_blank");
+          }}
+        >
+          Check out my <b>GitHub</b> profile
+        </button>
+      </section>
+    </section>
+  );
 }
 
-export default App
+export default App;
