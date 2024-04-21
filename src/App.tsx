@@ -13,7 +13,7 @@ function App() {
         "Creative Engineer",
         "Storyteller",
         "Fantasy Writer",
-        "Creator of Gondōlla: A Galactic Spiritual Mythology",
+        "Creator of Gondōlla",
         "Coffee Roaster",
         "Father + Husband",
         "Digital Home-ad",
