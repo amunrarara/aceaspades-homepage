@@ -45,62 +45,29 @@ function App() {
         ></span>
       </div>
       <section className="flex flex-col gap-4 mt-8">
-        <button
-          className="hover:scale-[101%] transition duration-300 ease-in-out"
-          onClick={() => {
-            window.open("https://sundragon.tech", "_blank");
-          }}
-        >
-          Hire me @ <b className="text-[#ffb700]">sundragon.tech</b>
-        </button>
-        <button
-          className="hover:scale-[101%] transition duration-300 ease-in-out"
-          onClick={() => {
-            window.open("https://sundragon.coffee", "_blank");
-          }}
-        >
+        <SelectorButton url="https://sundragon.tech">
+          Hire me @{" "}
+          <b className="text-[#ffb700] animate-pulse">sundragon.tech</b>
+        </SelectorButton>
+        <SelectorButton url="https://sundragon.coffee">
           Buy fresh-roasted coffee at{" "}
-          <b className="text-[#ffb700]">Sundragon Coffee</b>
-        </button>
-        <button
-          className="hover:scale-[101%] transition duration-300 ease-in-out"
-          onClick={() => {
-            window.open(
-              "https://njump.me/npub1xzrkzsrnr83vn7h0udq6tnapwpswy5equlrtkn3nu0e0anlmzynqne0qap",
-              "_blank"
-            );
-          }}
-        >
-          Visit my <b className="text-[#ffb700]">Nostr</b> profile via Njump
-        </button>
-        <button
-          className="hover:scale-[101%] transition duration-300 ease-in-out"
-          onClick={() => {
-            window.open(
-              "https://publish.obsidian.md/gondolla/Welcome+to+Gond%C5%8Dlla",
-              "_blank"
-            );
-          }}
-        >
-          Read <b className="text-[#ffb700]">Gondōlla</b>: A Galactic Spiritual
-          Mythology
-        </button>
-        <button
-          className="hover:scale-[101%] transition duration-300 ease-in-out"
-          onClick={() => {
-            window.open("https://github.com/amunrarara", "_blank");
-          }}
-        >
-          Check out my <b className="text-[#ffb700]">GitHub</b> profile
-        </button>
-        <button
-          className="hover:scale-[101%] transition duration-300 ease-in-out"
-          onClick={() => {
-            window.open("https://linkedin.com/in/aceaspades", "_blank");
-          }}
-        >
-          Connect on <b className="text-[#ffb700]">LinkedIn</b>
-        </button>
+          <b className="text-[#ffb700] animate-pulse">Sundragon Coffee</b>
+        </SelectorButton>
+        <SelectorButton url="https://njump.me/npub1xzrkzsrnr83vn7h0udq6tnapwpswy5equlrtkn3nu0e0anlmzynqne0qap">
+          Visit my <b className="text-[#ffb700] animate-pulse">Nostr</b> profile
+          via Njump
+        </SelectorButton>
+        <SelectorButton url="https://publish.obsidian.md/gondolla/Welcome+to+Gond%C5%8Dlla">
+          Read <b className="text-[#ffb700] animate-pulse">Gondōlla</b>: A
+          Galactic Spiritual Mythology
+        </SelectorButton>
+        <SelectorButton url="https://github.com/amunrarara">
+          Check out my <b className="text-[#ffb700] animate-pulse">GitHub</b>{" "}
+          profile
+        </SelectorButton>
+        <SelectorButton url="https://linkedin.com/in/aceaspades">
+          Connect on <b className="text-[#ffb700] animate-pulse">LinkedIn</b>
+        </SelectorButton>
         <LightningWidget
           name="⚡️ Zap Sats to Acea Spades ⚡️ "
           accent="#121212"
@@ -118,5 +85,22 @@ function App() {
     </section>
   );
 }
+interface SelectorButtonProps {
+  url: string;
+  children: React.ReactNode;
+}
+
+const SelectorButton: React.FC<SelectorButtonProps> = ({ url, children }) => {
+  return (
+    <button
+      className="hover:scale-[101%] transition duration-300 ease-in-out"
+      onClick={() => {
+        window.open(url, "_blank");
+      }}
+    >
+      {children}
+    </button>
+  );
+};
 
 export default App;
