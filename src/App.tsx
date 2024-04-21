@@ -48,7 +48,7 @@ function App() {
       <div className="min-h-40 flex justify-center items-center">
         <span
           ref={typedRef}
-          className="typed text-[#ffb700] font-black h3 text-left"
+          className="typed text-[#ffb700] font-black h3 text-center"
         ></span>
       </div>
       <section className="flex flex-col gap-4 mt-8">
