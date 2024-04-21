@@ -19,9 +19,9 @@ function App() {
         "Digital Home-ad",
         "JRR Tolkien Super-Nerd",
       ],
-      typeSpeed: 60,
+      typeSpeed: 75,
       loop: true,
-      cursorChar: "_",
+      showCursor: false,
       fadeOut: true,
     });
 
@@ -38,7 +38,7 @@ function App() {
         className="w-[200px] h-[200px] rounded-full mx-auto mb-4"
       />
       <h1 className="lg:text-[5rem] mt-auto font-black">ACEA SPADES</h1>
-      <div className="min-h-40 flex justify-center items-center">
+      <div className="min-h-40 flex justify-center items-center border-2 bg-black">
         <span
           ref={typedRef}
           className="typed text-[#ffb700] font-black h3 text-center"
