@@ -46,27 +46,27 @@ function App() {
       </div>
       <section className="flex flex-col gap-4 mt-8">
         <SelectorButton url="https://sundragon.tech">
-          Hire me @{" "}
+          Hire me at {"  "}
           <b className="text-[#ffb700] animate-pulse">sundragon.tech</b>
         </SelectorButton>
-        <SelectorButton url="https://sundragon.coffee">
-          Buy fresh-roasted coffee at{" "}
-          <b className="text-[#ffb700] animate-pulse">Sundragon Coffee</b>
-        </SelectorButton>
         <SelectorButton url="https://njump.me/npub1xzrkzsrnr83vn7h0udq6tnapwpswy5equlrtkn3nu0e0anlmzynqne0qap">
-          Visit my <b className="text-[#ffb700] animate-pulse">Nostr</b> profile
-          via Njump
+          Connect on <b className="text-[#ffb700] animate-pulse">Nostr</b>
         </SelectorButton>
-        <SelectorButton url="https://publish.obsidian.md/gondolla/Welcome+to+Gond%C5%8Dlla">
-          Read <b className="text-[#ffb700] animate-pulse">Gondōlla</b>: A
-          Galactic Spiritual Mythology
+        <SelectorButton url="https://linkedin.com/in/aceaspades">
+          See my <b className="text-[#ffb700] animate-pulse">LinkedIn</b>{" "}
+          profile
         </SelectorButton>
         <SelectorButton url="https://github.com/amunrarara">
           Check out my <b className="text-[#ffb700] animate-pulse">GitHub</b>{" "}
           profile
         </SelectorButton>
-        <SelectorButton url="https://linkedin.com/in/aceaspades">
-          Connect on <b className="text-[#ffb700] animate-pulse">LinkedIn</b>
+        <SelectorButton url="https://publish.obsidian.md/gondolla/Welcome+to+Gond%C5%8Dlla">
+          <b className="text-[#ffb700] animate-pulse">Gondōlla</b>: A Galactic
+          Spiritual Mythology
+        </SelectorButton>
+        <SelectorButton url="https://sundragon.coffee">
+          Buy fresh-roasted coffee at{" "}
+          <b className="text-[#ffb700] animate-pulse">Sundragon Coffee</b>
         </SelectorButton>
         <LightningWidget
           name="⚡️ Zap Sats to Acea Spades ⚡️ "
