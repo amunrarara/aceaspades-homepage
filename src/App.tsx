@@ -35,10 +35,10 @@ function App() {
       <img
         src="/images/acea-profile.png"
         alt="acea spades"
-        className="w-[200px] h-[200px] rounded-full mx-auto mb-4"
+        className="w-[200px] h-[200px] rounded-full mx-auto"
       />
-      <h1 className="lg:text-[5rem] mt-auto font-black">ACEA SPADES</h1>
-      <div className="min-h-40 flex justify-center items-center border-2 bg-black">
+      <h1 className="lg:text-[5rem] my-8 font-black">ACEA SPADES</h1>
+      <div className="min-h-48 lg:min-h-32 flex justify-center items-center border-2 bg-black border-white/20 rounded-2xl p-2">
         <span
           ref={typedRef}
           className="typed text-[#ffb700] font-black h3 text-center"
