@@ -51,7 +51,7 @@ function App() {
             window.open("https://sundragon.tech", "_blank");
           }}
         >
-          Hire me @ <b>sundragon.tech</b>
+          Hire me @ <b className="text-[#ffb700]">sundragon.tech</b>
         </button>
         <button
           className="hover:scale-[101%] transition duration-300 ease-in-out"
@@ -59,7 +59,8 @@ function App() {
             window.open("https://sundragon.coffee", "_blank");
           }}
         >
-          Buy fresh-roasted coffee at <b>Sundragon Coffee</b>
+          Buy fresh-roasted coffee at{" "}
+          <b className="text-[#ffb700]">Sundragon Coffee</b>
         </button>
         <button
           className="hover:scale-[101%] transition duration-300 ease-in-out"
@@ -70,7 +71,7 @@ function App() {
             );
           }}
         >
-          Visit my <b>Nostr</b> profile via Njump
+          Visit my <b className="text-[#ffb700]">Nostr</b> profile via Njump
         </button>
         <button
           className="hover:scale-[101%] transition duration-300 ease-in-out"
@@ -81,7 +82,8 @@ function App() {
             );
           }}
         >
-          Read <b>Gondōlla</b>: A Galactic Spiritual Mythology
+          Read <b className="text-[#ffb700]">Gondōlla</b>: A Galactic Spiritual
+          Mythology
         </button>
         <button
           className="hover:scale-[101%] transition duration-300 ease-in-out"
@@ -89,7 +91,7 @@ function App() {
             window.open("https://github.com/amunrarara", "_blank");
           }}
         >
-          Check out my <b>GitHub</b> profile
+          Check out my <b className="text-[#ffb700]">GitHub</b> profile
         </button>
         <button
           className="hover:scale-[101%] transition duration-300 ease-in-out"
@@ -97,7 +99,7 @@ function App() {
             window.open("https://linkedin.com/in/aceaspades", "_blank");
           }}
         >
-          Connect on <b>LinkedIn</b>
+          Connect on <b className="text-[#ffb700]">LinkedIn</b>
         </button>
         <LightningWidget
           name="⚡️ Zap Sats to Acea Spades ⚡️ "
