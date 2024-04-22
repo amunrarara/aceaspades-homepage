@@ -17,7 +17,7 @@ function App() {
         "Coffee Roaster",
         "Father + Husband",
         "Digital Home-ad",
-        "JRR Tolkien Super-Nerd",
+        "Tolkien Super-Nerd",
       ],
       typeSpeed: 75,
       loop: true,
